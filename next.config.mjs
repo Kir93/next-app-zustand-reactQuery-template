@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+const nextConfig = {
+  reactStrictMode: true,
+  transpilePackages: ['zustand'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    minimumCacheTTL: 31536000,
+    formats: ['image/avif', 'image/webp'],
+  },
+};
 
 export default nextConfig;
