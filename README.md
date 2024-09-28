@@ -24,10 +24,10 @@ nextJS app router simple template.
 
 Important library version history
 
-| Name        | Version |
-| :---------- | :------ |
-| react       | v18     |
-| next        | v14.2.7 |
-| chakra-ui   | v2.8.2  |
-| zustand     | v4.5.5  |
-| react-query | v5.53.3 |
+| Name        | Version  |
+| :---------- | :------- |
+| react       | v18      |
+| next        | v14.2.12 |
+| chakra-ui   | v2.8.2   |
+| zustand     | v4.5.5   |
+| react-query | v5.56.2  |
