@@ -41,7 +41,7 @@
     "@tanstack/react-query-devtools": "^5.62.3",
     "@types/node": "22.10.2",
     "@types/react": "^19.0.2",
-    "@types/react-dom": "^18.3.1",
+    "@types/react-dom": "^19.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "^15.1.2",
