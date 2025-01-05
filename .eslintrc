@@ -12,7 +12,7 @@
     "node": true,
     "es6": true
   },
-  "extends": ["next/core-web-vitals", "prettier"],
+  "extends": ["next", "prettier"],
   "plugins": ["import", "prettier"],
   "rules": {
     "jsx-a11y/label-has-associated-control": "off",
