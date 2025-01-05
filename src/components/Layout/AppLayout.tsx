@@ -8,7 +8,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => (
     m="auto auto 0"
     px={['21px', '22px']}
   >
-    <main>{children}</main>
+    {children}
   </Container>
 );
 

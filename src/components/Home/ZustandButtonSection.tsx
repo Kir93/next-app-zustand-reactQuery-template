@@ -8,7 +8,7 @@ const ZustandButtonSection: React.FC = () => {
   const login = useStore((state) => state.login);
   const logout = useStore((state) => state.logout);
   return (
-    <Button colorScheme="primary" onClick={me === null ? login : logout}>
+    <Button colorPalette="primary" onClick={me === null ? login : logout}>
       {me === null ? 'Log In' : 'Log Out'}
     </Button>
   );

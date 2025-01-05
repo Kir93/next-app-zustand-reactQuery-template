@@ -1,4 +1,3 @@
-import '@styles/global.css';
 import type { Metadata } from 'next';
 
 import ChakraUIProvider from '@providers/ChakraUIProvider';
@@ -17,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={notoSans.variable}>
+    <html lang="ko" className={notoSans.className} suppressHydrationWarning>
       <body>
         <ReactQueryProvider>
           <ChakraUIProvider>
