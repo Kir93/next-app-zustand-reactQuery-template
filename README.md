@@ -7,27 +7,29 @@ https://github.com/Kir93/next-app-zustand-reactQuery-template.git use this templ
 git clone https://github.com/Kir93/{PROJECT_NAME}.git
 ```
 
-1. Install packages - npm install || yarn
+1. Install packages - pnpm install
 2. Changed Theme - styles folder theme changed
-3. Running Project - npm run dev || yarn dev
+3. Theme Typegen - npx @chakra-ui/cli typegen ./src/styles/theme.ts
+4. Running Project - pnpm dev
 
 ## Repository short explanation
 
-nextJS app router simple template.
+NextJS app router simple template.
 
 - FrameWork : NextJS
 - Styling : ChakraUI
 - Store : Zustand
-- API : React Query
+- API : @tanstack/react-query
+- Package Manager : pnpm
 
 ## Package Version
 
 Important library version history
 
-| Name        | Version  |
-| :---------- | :------- |
-| react       | v18      |
-| next        | v14.2.12 |
-| chakra-ui   | v2.8.2   |
-| zustand     | v4.5.5   |
-| react-query | v5.56.2  |
+| Name                  | Version  |
+| :-------------------- | :------- |
+| react                 | v19      |
+| next                  | v15.1.3  |
+| chakra-ui             | v3.2.5   |
+| zustand               | v5.0.2   |
+| @tanstack/react-query | v5.62.11 |
