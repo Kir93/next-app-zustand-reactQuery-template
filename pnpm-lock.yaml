@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@chakra-ui/react':
         specifier: ^3.4.0
-        version: 3.4.0(@emotion/react@11.14.0(@types/react@19.0.3)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 3.4.0(@emotion/react@11.14.0(@types/react@19.0.8)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@emotion/react':
         specifier: ^11.14.0
-        version: 11.14.0(@types/react@19.0.3)(react@19.0.0)
+        version: 11.14.0(@types/react@19.0.8)(react@19.0.0)
       '@tanstack/react-query':
         specifier: ^5.65.1
         version: 5.65.1(react@19.0.0)
@@ -40,7 +40,7 @@ importers:
         version: 19.0.0(react@19.0.0)
       zustand:
         specifier: ^5.0.3
-        version: 5.0.3(@types/react@19.0.3)(react@19.0.0)
+        version: 5.0.3(@types/react@19.0.8)(react@19.0.0)
     devDependencies:
       '@tanstack/react-query-devtools':
         specifier: ^5.64.1
@@ -49,11 +49,11 @@ importers:
         specifier: 22.10.10
         version: 22.10.10
       '@types/react':
-        specifier: ^19.0.3
-        version: 19.0.3
+        specifier: ^19.0.8
+        version: 19.0.8
       '@types/react-dom':
         specifier: ^19.0.2
-        version: 19.0.2(@types/react@19.0.3)
+        version: 19.0.2(@types/react@19.0.8)
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -489,8 +489,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.0.3':
-    resolution: {integrity: sha512-UavfHguIjnnuq9O67uXfgy/h3SRJbidAYvNjLceB+2RIKVRBzVsh0QO+Pw6BCSQqFS9xwzKfwstXx0m6AbAREA==}
+  '@types/react@19.0.8':
+    resolution: {integrity: sha512-9P/o1IGdfmQxrujGbIMDyYaaCykhLKc0NGCtYcECNUr9UAaDe4gwvV9bR6tvd5Br1SG0j+PBpbKr2UYY8CwqSw==}
 
   '@typescript-eslint/eslint-plugin@8.20.0':
     resolution: {integrity: sha512-naduuphVw5StFfqp4Gq4WhIBE2gN1GEmMUExpJYknZJdRnc+2gDzB8Z3+5+/Kv33hPQRDGzQO/0opHE72lZZ6A==}
@@ -2311,11 +2311,11 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@chakra-ui/react@3.4.0(@emotion/react@11.14.0(@types/react@19.0.3)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@chakra-ui/react@3.4.0(@emotion/react@11.14.0(@types/react@19.0.8)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@ark-ui/react': 4.8.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@emotion/is-prop-valid': 1.3.1
-      '@emotion/react': 11.14.0(@types/react@19.0.3)(react@19.0.0)
+      '@emotion/react': 11.14.0(@types/react@19.0.8)(react@19.0.0)
       '@emotion/serialize': 1.3.3
       '@emotion/use-insertion-effect-with-fallbacks': 1.2.0(react@19.0.0)
       '@emotion/utils': 1.4.2
@@ -2363,7 +2363,7 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.14.0(@types/react@19.0.3)(react@19.0.0)':
+  '@emotion/react@11.14.0(@types/react@19.0.8)(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@emotion/babel-plugin': 11.13.5
@@ -2375,7 +2375,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 19.0.0
     optionalDependencies:
-      '@types/react': 19.0.3
+      '@types/react': 19.0.8
     transitivePeerDependencies:
       - supports-color
 
@@ -2628,11 +2628,11 @@ snapshots:
 
   '@types/parse-json@4.0.2': {}
 
-  '@types/react-dom@19.0.2(@types/react@19.0.3)':
+  '@types/react-dom@19.0.2(@types/react@19.0.8)':
     dependencies:
-      '@types/react': 19.0.3
+      '@types/react': 19.0.8
 
-  '@types/react@19.0.3':
+  '@types/react@19.0.8':
     dependencies:
       csstype: 3.1.3
 
@@ -4876,7 +4876,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zustand@5.0.3(@types/react@19.0.3)(react@19.0.0):
+  zustand@5.0.3(@types/react@19.0.8)(react@19.0.0):
     optionalDependencies:
-      '@types/react': 19.0.3
+      '@types/react': 19.0.8
       react: 19.0.0
