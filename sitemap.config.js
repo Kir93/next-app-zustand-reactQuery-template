@@ -1,6 +1,6 @@
-const siteUrl = process.env.NEXT_PUBLIC_DOMAIN_URL || 'http://localhost:3000/';
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl,
+  siteUrl: process.env.NEXT_PUBLIC_DOMAIN_URL || 'http://localhost:3000',
   exclude: ['/404'],
   generateRobotsTxt: true,
   robotsTxtOptions: {
