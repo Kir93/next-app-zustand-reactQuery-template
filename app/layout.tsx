@@ -1,9 +1,11 @@
-import type { Metadata } from 'next';
-
-import ChakraUIProvider from '@providers/ChakraUIProvider';
-import ReactQueryProvider from '@providers/ReactQueryProvider';
 import { notoSans } from '@configs/bigContents';
-import { AppLayout } from '@components/Layout';
+
+import ChakraUIProvider from '@provider/ChakraUIProvider';
+import ReactQueryProvider from '@provider/ReactQueryProvider';
+
+import { AppLayout } from '@components/layout';
+
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'NextJS App Router Zustand ReactQuery Template',
