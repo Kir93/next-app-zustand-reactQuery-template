@@ -23,10 +23,16 @@ const useBack = (defaultPath = '/') => {
   const router = useRouter();
 
   const goBack = useCallback(() => {
-    if (window.history.length <= 2) {
+    // SSR에서 window 객체가 없을 수 있기 때문에 체크
+    if (typeof window === 'undefined') {
       router.replace(defaultPath);
+      return;
+    }
+
+    if (window.history.length <= 2) {
+      router.replace(defaultPath); // 히스토리 부족 시 안전한 기본 경로로 이동
     } else {
-      router.back();
+      router.back(); // 충분한 히스토리 스택이 있으면 일반적인 뒤로 가기 수행
     }
   }, [router, defaultPath]);
 
