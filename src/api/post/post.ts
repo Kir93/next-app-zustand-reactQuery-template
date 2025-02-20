@@ -3,8 +3,7 @@ import { QueryOptions, useMutation, useQuery } from '@tanstack/react-query';
 import { fetch } from '@configs/axios';
 
 import { TPostAPI } from '.';
-
-import type { IPost, IPosts } from './post.types';
+import { IPost, IPosts } from './post.types';
 
 export const baseUrl = '/api/post';
 
