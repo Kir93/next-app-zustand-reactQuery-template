@@ -1,5 +1,5 @@
 'use client';
-import React, { FC, useCallback, useState } from 'react';
+import { FC, useCallback, useState } from 'react';
 
 import { Box, Button, Text } from '@chakra-ui/react';
 
