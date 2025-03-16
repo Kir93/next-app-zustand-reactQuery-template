@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 import { notoSans } from '@configs/bigContents';
 
 import ChakraUIProvider from '@provider/ChakraUIProvider';
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="ko" className={notoSans.className} suppressHydrationWarning>

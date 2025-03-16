@@ -1,9 +1,9 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactNode } from 'react';
 
 import { Container } from '@chakra-ui/react';
 
 interface IProps {
-  children: ReactElement;
+  children: ReactNode;
 }
 
 const AppLayout: FC<IProps> = ({ children }) => (
