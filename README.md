@@ -8,7 +8,7 @@ git clone https://github.com/Kir93/{PROJECT_NAME}.git
 ```
 
 1. Install packages - pnpm install or npm install or yarn
-2. Changed Theme - ./styles/theme.ts
+2. Changed Theme - ./src/styles/theme.ts
 3. Theme Typegen - npx @chakra-ui/cli typegen ./src/styles/theme.ts
 4. Running Project - pnpm dev or npm run dev or yarn dev
 
