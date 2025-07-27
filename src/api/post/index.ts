@@ -1,2 +1,2 @@
-export * as postAPI from './post';
-export type * as TPostAPI from './post.types';
+export const baseUrl = '/api/post';
+export * as postTypes from './post';
