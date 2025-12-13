@@ -46,8 +46,8 @@ importers:
         specifier: ^9.39.1
         version: 9.39.1
       '@next/eslint-plugin-next':
-        specifier: ^16.0.1
-        version: 16.0.3
+        specifier: ^16.0.10
+        version: 16.0.10
       '@tanstack/react-query-devtools':
         specifier: ^5.91.0
         version: 5.91.0(@tanstack/react-query@5.90.10(react@19.2.0))(react@19.2.0)
@@ -472,6 +472,9 @@ packages:
 
   '@next/env@16.0.10':
     resolution: {integrity: sha512-8tuaQkyDVgeONQ1MeT9Mkk8pQmZapMKFh5B+OrFUlG3rVmYTXcXlBetBgTurKXGaIZvkoqRT9JL5K3phXcgang==}
+
+  '@next/eslint-plugin-next@16.0.10':
+    resolution: {integrity: sha512-b2NlWN70bbPLmfyoLvvidPKWENBYYIe017ZGUpElvQjDytCWgxPJx7L9juxHt0xHvNVA08ZHJdOyhGzon/KJuw==}
 
   '@next/eslint-plugin-next@16.0.3':
     resolution: {integrity: sha512-6sPWmZetzFWMsz7Dhuxsdmbu3fK+/AxKRtj7OB0/3OZAI2MHB/v2FeYh271LZ9abvnM1WIwWc/5umYjx0jo5sQ==}
@@ -2885,6 +2888,10 @@ snapshots:
   '@next/env@13.5.11': {}
 
   '@next/env@16.0.10': {}
+
+  '@next/eslint-plugin-next@16.0.10':
+    dependencies:
+      fast-glob: 3.3.1
 
   '@next/eslint-plugin-next@16.0.3':
     dependencies:
