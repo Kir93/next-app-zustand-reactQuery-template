@@ -36,8 +36,13 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.39.4",
+<<<<<<< dependabot/npm_and_yarn/tanstack/react-query-devtools-5.99.2
+    "@next/eslint-plugin-next": "^16.2.3",
+    "@tanstack/react-query-devtools": "^5.99.2",
+=======
     "@next/eslint-plugin-next": "^16.2.4",
     "@tanstack/react-query-devtools": "^5.96.2",
+>>>>>>> main
     "@types/node": "25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.2",
