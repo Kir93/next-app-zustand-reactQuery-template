@@ -25,7 +25,7 @@
     "@chakra-ui/react": "^3.34.0",
     "@emotion/react": "^11.14.0",
     "@tanstack/react-query": "^5.99.2",
-    "axios": "^1.15.1",
+    "axios": "^1.15.2",
     "dayjs": "^1.11.20",
     "next": "latest",
     "next-sitemap": "^4.2.3",
@@ -36,8 +36,13 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.39.4",
+<<<<<<< dependabot/npm_and_yarn/tanstack/react-query-devtools-5.99.2
     "@next/eslint-plugin-next": "^16.2.3",
     "@tanstack/react-query-devtools": "^5.99.2",
+=======
+    "@next/eslint-plugin-next": "^16.2.4",
+    "@tanstack/react-query-devtools": "^5.96.2",
+>>>>>>> main
     "@types/node": "25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.2",
