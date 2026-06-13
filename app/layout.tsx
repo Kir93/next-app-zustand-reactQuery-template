@@ -2,12 +2,13 @@ import { ReactNode } from 'react';
 
 import { notoSans } from '@configs/bigContents';
 
-import ChakraUIProvider from '@provider/ChakraUIProvider';
 import ReactQueryProvider from '@provider/ReactQueryProvider';
 
-import { AppLayout } from '@components/layout';
+import AppLayout from './_components/AppLayout';
 
 import type { Metadata } from 'next';
+
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'NextJS App Router Zustand ReactQuery Template',
@@ -23,9 +24,7 @@ export default function RootLayout({
     <html lang="ko" className={notoSans.className} suppressHydrationWarning>
       <body>
         <ReactQueryProvider>
-          <ChakraUIProvider>
-            <AppLayout>{children}</AppLayout>
-          </ChakraUIProvider>
+          <AppLayout>{children}</AppLayout>
         </ReactQueryProvider>
       </body>
     </html>

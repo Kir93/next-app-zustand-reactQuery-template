@@ -1,16 +1,14 @@
-import { Box, Text } from '@chakra-ui/react';
-
-import CommonBar from '@atoms/common/CommonBar';
-
-import { HomeButtonSection, ZustandButtonSection } from '@components/home';
+import HomeButtonSection from './_components/ButtonSection';
+import CommonBar from './_components/CommonBar';
+import ZustandButtonSection from './_components/ZustandButtonSection';
 
 export default function Home() {
   return (
-    <Box w="100%">
+    <div className="w-full">
       <HomeButtonSection />
-      <Text fontSize="2xl">Home Style!</Text>
+      <p className="text-2xl">Home Style!</p>
       <CommonBar />
       <ZustandButtonSection />
-    </Box>
+    </div>
   );
 }
