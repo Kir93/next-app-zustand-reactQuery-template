@@ -77,3 +77,12 @@ import { fetch } from '@config/axios';
 
 const queryFn = async () => fetch.get('/api/post/posts').then((res) => res.data);
 ```
+
+## AI-ready
+
+This template ships with AI coding-assistant instructions, so tools like Claude Code, Cursor, Codex, and Copilot follow its conventions out of the box:
+
+- [`CLAUDE.md`](./CLAUDE.md) — canonical conventions (tech stack, folder layout, code style, and the React Compiler "no manual memoization" rule).
+- [`AGENTS.md`](./AGENTS.md) — vendor-neutral pointer to `CLAUDE.md` with a 3-line summary for tools that read `AGENTS.md`.
+
+After creating your project, edit `CLAUDE.md` to match your stack. Personal or machine-local overrides can live in a gitignored `CLAUDE.local.md`, which Claude Code merges automatically.
