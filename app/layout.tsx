@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { notoSans } from '@configs/bigContents';
+import { notoSans } from '@config/bigContents';
 
 import ReactQueryProvider from '@provider/ReactQueryProvider';
 

@@ -3,7 +3,7 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "bundler",
     "target": "ESNext",
@@ -24,27 +24,34 @@
       "@api": ["./src/api"],
       "@utils": ["./src/utils"],
       "@config": ["./src/config"],
-      "@styles": ["./src/styles"],
+      "@lib": ["./src/lib"],
       "@public": ["./public"],
       "@store": ["./src/store"],
-      "@atoms": ["./src/atoms"],
       "@components": ["./src/components"],
       "@provider": ["./src/provider"],
       "@api/*": ["./src/api/*"],
       "@utils/*": ["./src/utils/*"],
       "@config/*": ["./src/config/*"],
-      "@configs/*": ["./src/config/*"],
-      "@styles/*": ["./src/styles/*"],
+      "@lib/*": ["./src/lib/*"],
       "@public/*": ["./public/*"],
       "@store/*": ["./src/store/*"],
-      "@atoms/*": ["./src/atoms/*"],
       "@components/*": ["./src/components/*"],
       "@provider/*": ["./src/provider/*"]
     },
     "incremental": true,
-    "plugins": [{ "name": "next" }]
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-
-  "include": ["next-env.d.ts", "next.config.mjs", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "next.config.mjs",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

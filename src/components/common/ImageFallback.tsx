@@ -1,8 +1,8 @@
-import { FC, useCallback, useEffect, useState } from 'react';
+import { FC, useState } from 'react';
 
 import Image, { ImageProps } from 'next/image';
 
-import { blurDataURL } from '@configs/bigContents';
+import { blurDataURL } from '@config/bigContents';
 
 interface IProps extends ImageProps {
   fallbackSrc: string;
@@ -13,14 +13,12 @@ const ImageFallback: FC<IProps> = (props) => {
   const [imgSrc, setImgSrc] = useState(false);
   const [oldSrc, setOldSrc] = useState(src);
 
-  const onError = useCallback(() => setImgSrc(true), []);
+  const onError = () => setImgSrc(true);
 
-  useEffect(() => {
-    if (oldSrc !== src) {
-      setImgSrc(false);
-      setOldSrc(src);
-    }
-  }, [oldSrc, src]);
+  if (oldSrc !== src) {
+    setImgSrc(false);
+    setOldSrc(src);
+  }
 
   return (
     <Image
