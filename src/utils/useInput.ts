@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 
 /**
  * 폼 입력값 상태를 관리하고 변경 핸들러를 제공하는 커스텀 훅
@@ -25,10 +25,8 @@ const useInput = <T>(
   React.Dispatch<React.SetStateAction<T>>
 ] => {
   const [value, setter] = useState(initValue);
-  const handler = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => setter(e.target.value as unknown as T),
-    []
-  );
+  const handler = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setter(e.target.value as unknown as T);
   return [value, handler, setter];
 };
 
