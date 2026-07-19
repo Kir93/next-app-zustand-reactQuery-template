@@ -1,20 +1,23 @@
-import { QueryOptions, useQuery } from '@tanstack/react-query';
+import { UseQueryOptions, useQuery } from '@tanstack/react-query';
 
 import { fetch } from '@config/axios';
 
-import { baseUrl } from '..';
+import { baseUrl, postTypes } from '..';
 
-export const useGetPosts = (options?: Omit<QueryOptions, 'queryKey' | 'queryFn'>) => {
+export const useGetPosts = (
+  options?: Omit<UseQueryOptions<postTypes.Post[], Error, postTypes.Post[]>, 'queryKey' | 'queryFn'>
+) => {
   const queryKey = `${baseUrl}/posts`;
-  const queryFn = async () => fetch.get(`${queryKey}`).then((res) => res.data);
+  const queryFn = () => fetch.get<postTypes.Post[]>(`${queryKey}`).then((res) => res.data);
   return useQuery({ queryKey: [queryKey], queryFn, ...options });
 };
 
 export const useGetPost = (
   postId: string,
-  options?: Omit<QueryOptions, 'mutationKey' | 'mutationFn'>
+  options?: Omit<UseQueryOptions<postTypes.Post, Error, postTypes.Post>, 'queryKey' | 'queryFn'>
 ) => {
   const queryKey = `${baseUrl}/post`;
-  const queryFn = async () => fetch.get(`${queryKey}?postId=${postId}`).then((res) => res.data);
+  const queryFn = () =>
+    fetch.get<postTypes.Post>(`${queryKey}?postId=${postId}`).then((res) => res.data);
   return useQuery({ queryKey: [queryKey, postId], queryFn, ...options });
 };
