@@ -59,7 +59,7 @@
     "lint-staged": "^17.0.8",
     "prettier": "^3.9.5",
     "tailwindcss": "^4.3.2",
-    "typescript": "^6"
+    "typescript": "^7"
   },
   "lint-staged": {
     "**/*.{tsx,ts,jsx,js}": [
